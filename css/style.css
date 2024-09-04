@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,700;1,300;1,400;1,700&display=swap');
+
+:root {
+    --primary: #b57edc;
+    --bg: #010101;
+    --bgg: #d3d3d3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #010101;
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-color:var(--bgg) ;
+    text-align: center;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: #f9f6f2;
+    border-bottom: 1,7px solid #513c28;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 31;
+}
+
+.navbar .navbar-logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #010101;
+    font-style: italic;
+}
+
+.navbar .navbar-logo span {
+    color: var(--primary);
+}
+
+.navbar .navbar-nav a{
+    color: #010101;
+    display: inline-block;
+    font-size: 1.4rem;
+    margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+    color: var(--primary);
+}
+
+.book {
+    width: 650px;
+    position: absolute;
+    left: 60%;
+    top: 33%;
+    transition: translate(-10%,-33%);
+    line-height: 60px;
+    min-height: 1980px;
+}
+
+.book p:nth-child(1), .book .details {
+    color: var(--bg);
+    font-size: 20px;
+}
+
+.details {
+    line-height: 30px !important;
+}
+
+.book h1 {
+    font-size: 35px;
+    margin: 0;
+    letter-spacing: 3px;
+    color: #010101;
+}
+
+.book h1 span {
+    color: var(--primary);
+}
+
+.writer{
+    margin: 100px;
+    margin-top: -100px;
+    padding-top: 70rem;
+}
+
+.writer h1{
+    font-size: 2rem;
+}
+.writer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    padding-top: 3rem;
+}
+.writer .box-container .box{
+    padding: 2rem 1rem;
+    background-color: #fff;
+    outline: .1rem solid rgba(0, 0, 0, .1);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow:0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+.writer .box-container .box img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: .2rem solid #ccc;
+}
+.writer .box-container .box h3{
+    font-size: 1.5rem;
+    padding-bottom: .5rem;
+}
+.writer .box-container .box p{
+    padding: 1rem 0;
+    line-height: 1.5;
+    color: #666;
+    font-size: 1.2rem;
+}
